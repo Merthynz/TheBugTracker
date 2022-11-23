@@ -1,7 +1,5 @@
-﻿using Microsoft.Build.Framework;
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
-using RequiredAttribute = System.ComponentModel.DataAnnotations.RequiredAttribute;
 
 #nullable disable
 
