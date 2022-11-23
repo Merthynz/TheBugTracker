@@ -1,5 +1,7 @@
 ﻿using System.ComponentModel;
 
+#nullable disable
+
 namespace TheBugTracker.Models
 {
     public class TicketHistory

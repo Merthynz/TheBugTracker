@@ -1,6 +1,8 @@
 ﻿using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
+#nullable disable
+
 namespace TheBugTracker.Models
 {
     public class TicketType

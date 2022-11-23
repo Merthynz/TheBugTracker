@@ -3,6 +3,8 @@ using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
+#nullable disable
+
 namespace TheBugTracker.Models
 {
     public class TicketAttachment
