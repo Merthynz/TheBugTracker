@@ -54,8 +54,8 @@ namespace TheBugTracker.Models
         public virtual TicketType TicketType { get; set; }
         public virtual TicketPriority TicketPriority { get; set; }
         public virtual TicketStatus TicketStatus { get; set; }
-        public virtual BTUser TicketOwner { get; set; }
-        public virtual BTUser TicketDeveloper { get; set; }
+        public virtual BTUser OwnerUser { get; set; }
+        public virtual BTUser DeveloperUser { get; set; }
 
         public virtual ICollection<TicketComment> Comments { get; set; } = new HashSet<TicketComment>();
         public virtual ICollection<TicketAttachment> Attachments { get; set; } = new HashSet<TicketAttachment>();
