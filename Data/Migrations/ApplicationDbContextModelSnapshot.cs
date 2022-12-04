@@ -34,7 +34,7 @@ namespace TheBugTracker.Data.Migrations
 
                     b.HasIndex("ProjectsId");
 
-                    b.ToTable("BTUserProject");
+                    b.ToTable("BTUserProject", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -271,7 +271,7 @@ namespace TheBugTracker.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Companies");
+                    b.ToTable("Companies", (string)null);
                 });
 
             modelBuilder.Entity("TheBugTracker.Models.Invite", b =>
@@ -325,7 +325,7 @@ namespace TheBugTracker.Data.Migrations
 
                     b.HasIndex("ProjectId");
 
-                    b.ToTable("Invites");
+                    b.ToTable("Invites", (string)null);
                 });
 
             modelBuilder.Entity("TheBugTracker.Models.Notification", b =>
@@ -369,7 +369,7 @@ namespace TheBugTracker.Data.Migrations
 
                     b.HasIndex("TicketId");
 
-                    b.ToTable("Notifications");
+                    b.ToTable("Notifications", (string)null);
                 });
 
             modelBuilder.Entity("TheBugTracker.Models.Project", b =>
@@ -418,7 +418,7 @@ namespace TheBugTracker.Data.Migrations
 
                     b.HasIndex("ProjectPriorityId");
 
-                    b.ToTable("Projects");
+                    b.ToTable("Projects", (string)null);
                 });
 
             modelBuilder.Entity("TheBugTracker.Models.ProjectPriority", b =>
@@ -434,7 +434,7 @@ namespace TheBugTracker.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("ProjectPriorities");
+                    b.ToTable("ProjectPriorities", (string)null);
                 });
 
             modelBuilder.Entity("TheBugTracker.Models.Ticket", b =>
@@ -501,7 +501,7 @@ namespace TheBugTracker.Data.Migrations
 
                     b.HasIndex("TicketTypeId");
 
-                    b.ToTable("Tickets");
+                    b.ToTable("Tickets", (string)null);
                 });
 
             modelBuilder.Entity("TheBugTracker.Models.TicketAttachment", b =>
@@ -539,7 +539,7 @@ namespace TheBugTracker.Data.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("TicketAttachments");
+                    b.ToTable("TicketAttachments", (string)null);
                 });
 
             modelBuilder.Entity("TheBugTracker.Models.TicketComment", b =>
@@ -568,7 +568,7 @@ namespace TheBugTracker.Data.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("TicketComments");
+                    b.ToTable("TicketComments", (string)null);
                 });
 
             modelBuilder.Entity("TheBugTracker.Models.TicketHistory", b =>
@@ -606,7 +606,7 @@ namespace TheBugTracker.Data.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("TicketHistories");
+                    b.ToTable("TicketHistories", (string)null);
                 });
 
             modelBuilder.Entity("TheBugTracker.Models.TicketPriority", b =>
@@ -622,7 +622,7 @@ namespace TheBugTracker.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("TicketPriorities");
+                    b.ToTable("TicketPriorities", (string)null);
                 });
 
             modelBuilder.Entity("TheBugTracker.Models.TicketStatus", b =>
@@ -638,7 +638,7 @@ namespace TheBugTracker.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("TicketStatuses");
+                    b.ToTable("TicketStatuses", (string)null);
                 });
 
             modelBuilder.Entity("TheBugTracker.Models.TicketType", b =>
@@ -654,7 +654,7 @@ namespace TheBugTracker.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("TicketTypes");
+                    b.ToTable("TicketTypes", (string)null);
                 });
 
             modelBuilder.Entity("BTUserProject", b =>
