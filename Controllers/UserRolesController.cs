@@ -5,6 +5,8 @@ using TheBugTracker.Extensions;
 using TheBugTracker.Models;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
+#nullable disable
+
 namespace TheBugTracker.Controllers
 {
     public class UserRolesController : Controller
@@ -17,6 +19,8 @@ namespace TheBugTracker.Controllers
             _rolesService = rolesService;
             _companyInfoService = companyInfoService;
         }
+
+        [HttpGet]
         public async Task<IActionResult> ManageUserRoles()
         {
             // Add an instance of the ViewModel as a List (model)
