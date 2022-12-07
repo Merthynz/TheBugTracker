@@ -42,6 +42,7 @@ namespace TheBugTracker.Models
         [DisplayName("File Extension")]
         public string ImageFileContentType { get; set; }
 
+        [DisplayName("Archived")]
         public bool Archived { get; set; }
 
 
