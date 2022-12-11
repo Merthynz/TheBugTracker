@@ -42,7 +42,7 @@ namespace TheBugTracker.Models
         public byte[] ImageFileData { get; set; }
 
         [DisplayName("File Extension")]
-        public string ImageFileContentType { get; set; }
+        public string ImageContentType { get; set; }
 
         [DisplayName("Archived")]
         public bool Archived { get; set; }

@@ -116,7 +116,7 @@ namespace TheBugTracker.Data.Migrations
                     ProjectPriorityId = table.Column<int>(type: "integer", nullable: true),
                     ImageFileName = table.Column<string>(type: "text", nullable: true),
                     ImageFileData = table.Column<byte[]>(type: "bytea", nullable: true),
-                    ImageFileContentType = table.Column<string>(type: "text", nullable: true),
+                    ImageContentType = table.Column<string>(type: "text", nullable: true),
                     Archived = table.Column<bool>(type: "boolean", nullable: false)
                 },
                 constraints: table =>
