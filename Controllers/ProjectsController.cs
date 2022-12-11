@@ -97,7 +97,7 @@ namespace TheBugTracker.Controllers
                     {
                         model.Project.ImageFileData = await _fileService.ConvertFileToByteArrayAsync(model.Project.ImageFormFile);
                         model.Project.ImageFileName = model.Project.ImageFormFile.FileName;
-                        model.Project.ImageContentType = model.Project.ImageFormFile.ContentType;
+                        model.Project.ImageFileContentType = model.Project.ImageFormFile.ContentType;
                     }
 
                     model.Project.CompanyId = companyId;
@@ -156,7 +156,7 @@ namespace TheBugTracker.Controllers
                     {
                         model.Project.ImageFileData = await _fileService.ConvertFileToByteArrayAsync(model.Project.ImageFormFile);
                         model.Project.ImageFileName = model.Project.ImageFormFile.FileName;
-                        model.Project.ImageContentType = model.Project.ImageFormFile.ContentType;
+                        model.Project.ImageFileContentType = model.Project.ImageFormFile.ContentType;
                     }
 
                     await _projectService.UpdateProjectAsync(model.Project);

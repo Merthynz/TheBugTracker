@@ -392,7 +392,7 @@ namespace TheBugTracker.Data.Migrations
                     b.Property<DateTimeOffset>("EndDate")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<string>("ImageContentType")
+                    b.Property<string>("ImageFileContentType")
                         .HasColumnType("text");
 
                     b.Property<byte[]>("ImageFileData")
